@@ -11,3 +11,7 @@ sampleDict = {
         }
     }
 }
+
+history = sampleDict["class"]["student"]["marks"]["history"]
+
+print(history)

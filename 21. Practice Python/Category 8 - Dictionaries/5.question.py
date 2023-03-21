@@ -11,3 +11,10 @@ sampleDict = {
 # Keys to extract
 
 keys = ["name", "salary"]
+
+result = dict()
+for i in sampleDict.keys():
+    if i in keys:
+        result[i] = sampleDict[i]
+
+print(result)

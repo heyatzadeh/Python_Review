@@ -8,3 +8,9 @@ sampleDict = {
 
 }
 keysToRemove = ["name", "salary"]
+
+# for i in keysToRemove:
+#     if i in sampleDict.keys():
+#         sampleDict.pop(i)
+print({x: sampleDict.pop(x) for x in keysToRemove})
+print(sampleDict)
