@@ -1,4 +1,3 @@
-
 """ Class Inheritance
 Given:
 
@@ -16,3 +15,11 @@ class Vehicle:
 
     def seating_capacity(self, capacity):
         return f"The seating capacity of a {self.name} is {capacity} passengers"
+
+
+class Bus(Vehicle):
+    def __init__(self, name, max_speed, mileage):
+        super().__init__(name, max_speed, mileage)
+
+    def seating_capacity(self, capacity):
+        return super().seating_capacity(50)

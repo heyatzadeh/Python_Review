@@ -21,7 +21,10 @@ class Vehicle:
 
 
 class Bus(Vehicle):
-    pass
+
+    def fare(self):
+        old = super().fare()
+        return old + 0.1 * old
 
 
 School_bus = Bus("School Volvo", 12, 50)

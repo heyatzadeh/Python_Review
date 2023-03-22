@@ -5,11 +5,13 @@ Define a class attribute ”color” with a default value white. I.e., Every Veh
 
 
 class Vehicle:
+    color = "white"
 
     def __init__(self, name, max_speed, mileage):
         self.name = name
         self.max_speed = max_speed
         self.mileage = mileage
+        self.color = color
 
 
 class Bus(Vehicle):
