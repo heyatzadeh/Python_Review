@@ -7,10 +7,12 @@ sample_json = """{
    "company":{ 
       "employee":{ 
          "name":"emma",
-         "payble":{ 
+         "payable":{ 
             "salary":7000,
             "bonus":800
          }
       }
    }
 }"""
+
+print(json.loads(sample_json)["company"]["employee"]["payable"]["salary"])
