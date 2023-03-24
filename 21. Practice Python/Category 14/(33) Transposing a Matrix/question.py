@@ -4,6 +4,17 @@
 # 2- Using Nested List Comprehension
 
 # 3x2 matrix
-x = [[1, 7],
-     [4, 5],
-     [7, 8]]
+matrix = [[1, 7],
+          [4, 5],
+          [7, 8]]
+
+result = [[0, 0, 0],
+          [0, 0, 0]]
+
+for j in range(len(matrix)):
+    for i in range(len(matrix[0])):
+        result[i][j] = matrix[j][i]
+
+transpose = [[matrix[j][i] for j in range(len(matrix))] for i in range(len(matrix[0]))]
+
+print(result)

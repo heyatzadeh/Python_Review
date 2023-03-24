@@ -11,3 +11,11 @@ x = [[9, 5, 2],
 y = [[1, 9, 1, 11],
      [2, 6, 5, 7],
      [3, 4, 1, 5]]
+
+result = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+
+for row in range(len(x)):
+    for col in range(len(y[0])):
+        result[row][col] = x[row][col] * y[row][col]
+
+print(result)
