@@ -1,4 +1,6 @@
 import requests
+from requests_html import HTMLSession
+
 from bs4 import BeautifulSoup
 
 # url = "https://stackoverflow.com/questions"
@@ -10,5 +12,11 @@ from bs4 import BeautifulSoup
 #     print(question.select_one(".s-link").getText())
 
 bonbast = "https://www.bonbast.com"
-response = requests.get(bonbast)
-print(response.text)
+# response = requests.get(bonbast)
+# print(response.text)
+
+s = HTMLSession()
+response = s.get(bonbast)
+response.html.render()
+
+print(response.content)

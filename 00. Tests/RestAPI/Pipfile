@@ -9,6 +9,7 @@ autopep8 = "*"
 pylint = "*"
 twilio = "*"
 beautifulsoup4 = "*"
+requests-html = "*"
 
 [dev-packages]
 
