@@ -2,3 +2,5 @@
 *.pyc
 /00. Tests/RestAPI/config.py
 /00. Tests/Automate/Rahsam.py
+config.py
+/00. Tests/FTP/terminals.csv
